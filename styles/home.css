@@ -85,7 +85,7 @@
 }
 
 .profile_txt h3,
-aside {
+p {
   margin-bottom: 2rem;
 }
 
@@ -109,7 +109,7 @@ aside {
     margin-left: 2.5rem;
   }
 
-  .profile_txt aside {
+  .profile_txt p {
     width: 50vw;
   }
 
@@ -176,11 +176,11 @@ aside {
   }
 
   .profile_txt h3,
-  aside {
+  p {
     margin-bottom: 1rem;
   }
 
-  .profile_txt aside {
+  .profile_txt p {
     display: none;
   }
 
