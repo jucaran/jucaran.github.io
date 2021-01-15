@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <title>Juan Castro Arancibia</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader_wrapper">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+      <div class="loader_bkg left"></div>
+      <div class="loader_bkg right"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <span
+      onclick="toggleMenu()"
+      id="sidebar_btn"
+      class="icon-align-left"
+    ></span>
+    <nav class="sidebar">
+      <ul class="menu_items">
+        <li class="menu_item">
+          <span
+            onclick="toggleMenu()"
+            id="sidebar_btn_close"
+            class="icon-x-circle"
+          ></span>
+        </li>
+        <li class="menu_item">
+          <a href="index.html">
+            <span class="icon-home"></span><span class="item_txt">Inicio</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="#">
+            <span class="icon-user"></span
+            ><span class="item_txt">Sobre mí</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="mywork.html">
+            <span class="icon-paperclip"></span
+            ><span class="item_txt">Mi trabajo</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="contact.html">
+            <span class="icon-message-circle"></span
+            ><span class="item_txt">Contactame!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Home content -->
+    <section class="profile">
+      <div class="profile_img">
+        <div class="column"></div>
+        <img
+          class="picture"
+          src="./media/profile_picture.jpg"
+          width="300px"
+          alt="Profile picture"
+        />
+      </div>
+      <header class="profile_txt">
+        <div class="titles">
+          <div class="row"></div>
+          <h1>Juan</h1>
+          <h2>Castro Arancibia</h2>
+          <h3>UX/UI Designer | Full-stack web developer</h3>
+        </div>
+        <aside>
+          Desde que soy muy chico siempre me gusto jugar creando cosas. Empecé a
+          usar Photoshop cuando tenía 13 y cree mi primer web a los 16. Me
+          apasiona la tecnología y las oportunidades que esta brinda a nuestra
+          sociedad. También me encanta hacer música, sacar fotos y dibujar.
+        </aside>
+        <button class="cta"><a href="#">SOBRE MÍ</a></button>
+        <button class="cta primary">
+          <a href="mywork.html">MIRÁ MI TRABAJO</a>
+        </button>
+      </header>
+    </section>
+
+    <!-- Adding js scripts -->
+    <script src="loader.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <title>Juan Castro Arancibia | Contacto</title>
+  </head>
+  <body>
+    <span
+      onclick="toggleMenu()"
+      id="sidebar_btn"
+      class="icon-align-left"
+    ></span>
+    <nav class="sidebar">
+      <ul class="menu_items">
+        <li class="menu_item">
+          <span
+            onclick="toggleMenu()"
+            id="sidebar_btn_close"
+            class="icon-x-circle"
+          ></span>
+        </li>
+        <li class="menu_item">
+          <a href="index.html">
+            <span class="icon-home"></span><span class="item_txt">Inicio</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="#">
+            <span class="icon-user"></span
+            ><span class="item_txt">Sobre mí</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="mywork.html">
+            <span class="icon-paperclip"></span
+            ><span class="item_txt">Mi trabajo</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="contact.html">
+            <span class="icon-message-circle"></span
+            ><span class="item_txt">Contactame!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row"></div>
+    <div class="column"></div>
+    <div class="form_bkg"></div>
+    <section class="form_container">
+      <form action="#">
+        <h2>Pongamonos en contacto!</h2>
+        <div class="field">
+          <label for="name">Nombre:</label>
+          <input placeholder="Su nombre..." type="text" />
+        </div>
+        <div class="field">
+          <label for="email">Email:</label>
+          <input placeholder="Su email..." type="email" />
+        </div>
+        <div class="field">
+          <label for="email">Mensaje:</label>
+          <textarea placeholder="Su mensaje..." rows="5" cols="15"></textarea>
+        </div>
+        <input class="submit_btn" type="submit" value="Enviar!" />
+      </form>
+    </section>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+.column {
+  z-index: -1;
+  position: absolute;
+  left: 25%;
+  width: 25vh;
+  height: 100vh;
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 950px) {
+}
+
+.row {
+  position: absolute;
+  top: 20vh;
+  z-index: -2;
+  height: 25vh;
+  width: 100vw;
+  background: var(--secondary-color);
+}
+
+form {
+  position: absolute;
+  width: 70vw;
+  max-width: 500px;
+  height: 80vh;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--dark-color);
+}
+.form_bkg {
+  position: absolute;
+  width: 70vw;
+  max-width: 500px;
+  min-width: 300px;
+  height: 90vh;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.568);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: 550px) and (max-width: 950px) {
+  form {
+    min-width: 450px;
+  }
+  .form_bkg {
+    min-width: 450px;
+  }
+
+  .column {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .column {
+    left: 10%;
+  }
+}
+
+form h2 {
+  font-size: 2rem;
+  color: var(--dark-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  transition: 200ms;
+  font-family: "Ubuntu", sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 2px solid var(--secondary-color);
+}
+
+.submit_btn {
+  width: 80%;
+  color: var(--light-color);
+  background: var(--primary-color);
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+}
+.submit_btn:hover {
+  background: var(--primary-color-darker);
+}
