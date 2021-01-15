@@ -7,9 +7,6 @@
   background: var(--primary-color);
 }
 
-@media screen and (max-width: 950px) {
-}
-
 .row {
   position: absolute;
   top: 20vh;
@@ -84,7 +81,8 @@ form h2 {
 }
 
 form input,
-form textarea {
+form textarea,
+form button {
   width: 100%;
   margin-top: 0.5rem;
   padding: 1rem;
