@@ -30,6 +30,16 @@
   transition: 350ms ease-out;
 }
 
+.sidebar_closer {
+  position: fixed;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+}
+
 #sidebar_btn_close {
   position: relative;
   top: 2rem;
@@ -70,5 +80,8 @@
 }
 
 .sidebar.active {
+  left: 0;
+}
+.sidebar_closer.active {
   left: 0;
 }
