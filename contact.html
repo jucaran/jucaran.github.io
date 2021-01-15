@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <title>Juan Castro Arancibia | Contacto</title>
   </head>
   <body>
+    <!-- Loader -->
+    <div class="loader_wrapper">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+      <div class="loader_bkg left"></div>
+      <div class="loader_bkg right"></div>
+    </div>
+
+    <!-- Sidebar -->
     <span
       onclick="toggleMenu()"
       id="sidebar_btn"
@@ -49,6 +61,7 @@
       </ul>
     </nav>
 
+    <!-- Contact content -->
     <div class="row"></div>
     <div class="column"></div>
     <div class="form_bkg"></div>
@@ -70,6 +83,7 @@
         <input class="submit_btn" type="submit" value="Enviar!" />
       </form>
     </section>
+    <script src="loader.js"></script>
     <script src="sidebar.js"></script>
   </body>
 </html>
