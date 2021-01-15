@@ -1,5 +1,24 @@
+#contact_btn {
+  font-size: 1.5rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: color 200ms;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+}
+#contact_btn .btn_text {
+  font-family: "Space mono", monospace;
+  font-size: 0.8rem;
+}
+#contact_btn:hover {
+  color: var(--secondary-color);
+}
+
 .profile {
-  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -106,6 +125,13 @@ aside {
 
 /* phone responsive */
 @media screen and (max-width: 600px) {
+  #contact_btn {
+    font-size: 2rem;
+  }
+  #contact_btn .btn_text {
+    display: none;
+  }
+
   .profile {
     flex-direction: column;
     align-items: center;
