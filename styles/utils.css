@@ -63,6 +63,37 @@ p::-moz-selection {
   background: var(--secondary-color);
 }
 
+/* tablet responsive */
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+/* phone responsive */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
 /* Animation frames */
 @-webkit-keyframes sk-rotate {
   100% {

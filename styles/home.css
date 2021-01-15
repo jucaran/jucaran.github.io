@@ -81,19 +81,6 @@ aside {
 
 /* tablet responsive */
 @media screen and (min-width: 601px) and (max-width: 950px) {
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-
   .profile_img .picture {
     width: 12rem;
     height: 12rem;
@@ -119,18 +106,6 @@ aside {
 
 /* phone responsive */
 @media screen and (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
   .profile {
     flex-direction: column;
     align-items: center;
