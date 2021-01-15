@@ -10,7 +10,7 @@ const toggleMenu = () => {
     menuOpen = !menuOpen;
   } else {
     sidebar.classList.remove("active");
-    sidebarCloser.classList.add("active");
+    sidebarCloser.classList.remove("active");
     menuOpen = !menuOpen;
   }
 };
