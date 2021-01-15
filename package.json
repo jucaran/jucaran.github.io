@@ -1,0 +1,22 @@
+{
+  "name": "jucaran.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jucaran/jucaran.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jucaran/jucaran.github.io/issues"
+  },
+  "homepage": "https://github.com/jucaran/jucaran.github.io#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
