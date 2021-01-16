@@ -16,6 +16,15 @@
   background: var(--secondary-color);
 }
 
+.api_response {
+  color: var(--light-color);
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 form {
   position: absolute;
   width: 70vw;

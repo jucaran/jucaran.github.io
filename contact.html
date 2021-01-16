@@ -66,20 +66,37 @@
     <div class="row"></div>
     <div class="column"></div>
     <div class="form_bkg">
+      <h2 class="api_response"></h2>
       <section class="form_container">
-        <form method="POST" action="https://jucaran-api.herokuapp.com/">
+        <form action="#">
           <h2>Pongamonos en contacto!</h2>
           <div class="field">
             <label for="name">Nombre:</label>
-            <input placeholder="Su nombre..." type="text" />
+            <input
+              class="form_input"
+              name="name"
+              placeholder="Su nombre..."
+              type="text"
+            />
           </div>
           <div class="field">
             <label for="email">Email:</label>
-            <input placeholder="Su email..." type="email" />
+            <input
+              class="form_input"
+              name="email"
+              placeholder="Su email..."
+              type="email"
+            />
           </div>
           <div class="field">
-            <label for="email">Mensaje:</label>
-            <textarea placeholder="Su mensaje..." rows="5" cols="15"></textarea>
+            <label for="message">Mensaje:</label>
+            <textarea
+              class="form_input"
+              name="message"
+              placeholder="Su mensaje..."
+              rows="5"
+              cols="15"
+            ></textarea>
           </div>
           <button class="submit_btn" type="submit">Enviar!</button>
         </form>
@@ -89,5 +106,6 @@
     <!-- Adding scripts -->
     <script src="loader.js"></script>
     <script src="sidebar.js"></script>
+    <script src="sendMail.js"></script>
   </body>
 </html>
