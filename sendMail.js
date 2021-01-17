@@ -1,14 +1,13 @@
-const body = document.querySelector("body");
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll(".form_input");
 const result = document.querySelector(".api_response");
-
-let mailSending = false;
+const mailLoading = document.querySelector(".mail_loading");
 
 const sendMail = async (e) => {
   e.preventDefault();
   let formData = {};
-  body.classList.remove("loaded");
+  form.style.display = "none";
+  mailLoading.classList.add("active");
 
   inputs.forEach((e) => {
     formData[e.name] = e.value;
@@ -23,13 +22,11 @@ const sendMail = async (e) => {
   });
 
   if (response.ok) {
-    body.classList.add("loaded");
-    result.innerText = "Thank you, your message was delivered!";
-    form.style.display = "none";
+    mailLoading.classList.remove("active");
+    result.innerText = "Gracias, tu mensaje fue enviado correctamente!";
   } else {
-    body.classList.add("loaded");
+    mailLoading.classList.remove("active");
     result.innerText = "Something went wrong :(";
-    form.style.display = "none";
   }
 };
 

@@ -108,6 +108,56 @@ form textarea:focus {
   background: var(--primary-color-darker);
 }
 
+.mail_loading {
+  display: none;
+}
+
+.mail_loading.active {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--light-color);
+}
+
+.mail_spinner {
+  margin: 100px auto;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  z-index: 1001;
+  text-align: center;
+
+  -webkit-animation: sk-rotate 2s infinite linear;
+  animation: sk-rotate 2s infinite linear;
+}
+
+.mail_dot1,
+.mail_dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+.mail_dot1 {
+  background: var(--secondary-color);
+}
+
+.mail_dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+  background: var(--primary-color);
+}
+
 /* Tablet responsive ------------------------------------------ */
 @media screen and (min-width: 550px) and (max-width: 950px) {
   form {
