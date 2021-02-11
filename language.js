@@ -90,6 +90,14 @@ const getTexts = (spanish) => {
   }
 
   const nav = document.querySelectorAll(".item_txt");
+  const resumeLinks = document.querySelectorAll(".resume_link");
+
+  console.log(resumeLinks);
+
+  resumeLinks.forEach(
+    (el) =>
+      (el.href = `Juan_Castro_Arancibia_CV${spanish ? "es.pdf" : "en.pdf"}`)
+  );
 
   nav.forEach((el, i) => {
     el.innerText = texts[spanish ? "es" : "en"].navbar[i];
