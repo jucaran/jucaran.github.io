@@ -45,7 +45,7 @@ spanish = JSON.parse(spanish);
 
 const getTexts = (spanish) => {
   switch (page) {
-    case "index.html":
+    default:
       const about = document.querySelector("p");
       const cta = document.querySelectorAll(".cta");
       const contactBtn = document.querySelector(".btn_text");
