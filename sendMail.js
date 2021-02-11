@@ -23,10 +23,14 @@ const sendMail = async (e) => {
 
   if (response.ok) {
     mailLoading.classList.remove("active");
-    result.innerText = "Gracias, tu mensaje fue enviado correctamente!";
+    result.innerText = spanish
+      ? "Gracias, tu mensaje fue enviado correctamente!"
+      : "Thank You, Your message was delivered succesfully!";
   } else {
     mailLoading.classList.remove("active");
-    result.innerText = "Something went wrong :(";
+    result.innerText = spanish
+      ? "Algo anduvo mal :("
+      : "Something went wrong :(";
   }
 };
 
