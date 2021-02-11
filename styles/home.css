@@ -135,6 +135,8 @@ p {
 /* phone responsive */
 @media screen and (max-width: 600px) {
   #language {
+    position: relative;
+    top: 0.2rem;
     height: 1.7rem;
   }
   #contact_btn {
