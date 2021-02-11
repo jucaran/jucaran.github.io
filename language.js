@@ -24,7 +24,7 @@ const texts = {
     cta: ["DOWNLOAD RESUME", "CHECK MY WORK"],
     works: [
       "Cosmetics, creams, candles and clothing store. I've worked in the branding design and in the responsive web development.",
-      "Music articles web soter. I've worked in the branding design, front-end development with React and back-end development with NodeJS.",
+      "Music articles web store. I've worked in the branding design, front-end development with React and back-end development with NodeJS.",
       "Personal proyect to get used to React flow. Dinamic beat sequencer. Pulse, times and sounds control.",
     ],
     contactLabels: ["Name:", "Email:", "Message:"],
