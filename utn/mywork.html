@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Castro Arancibia | Mi trabajo</title>
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/mywork.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader_wrapper">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+      <div class="loader_bkg left"></div>
+      <div class="loader_bkg right"></div>
+    </div>
+
+    <!-- Sidebar -->
+    <span
+      onclick="toggleMenu()"
+      id="sidebar_btn"
+      class="icon-align-left"
+    ></span>
+    <div onclick="toggleMenu()" class="sidebar_closer"></div>
+    <nav class="sidebar">
+      <ul class="menu_items">
+        <li class="menu_item">
+          <span
+            onclick="toggleMenu()"
+            id="sidebar_btn_close"
+            class="icon-x-circle"
+          ></span>
+        </li>
+        <li class="menu_item">
+          <a href="index.html">
+            <span class="icon-home"></span><span class="item_txt">Inicio</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a
+            class="resume_link"
+            target="_blank"
+            href="./Juan_Castro_Arancibia_CVes.pdf"
+          >
+            <span class="icon-user"></span
+            ><span class="item_txt">Descargar CV</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="mywork.html">
+            <span class="icon-paperclip"></span
+            ><span class="item_txt">Mi trabajo</span>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="contact.html">
+            <span class="icon-message-circle"></span
+            ><span class="item_txt">Contactame!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Work items -->
+    <section class="my_work">
+      <article class="work_item first">
+        <div class="event_handler first"></div>
+        <div class="logo_container first">
+          <img
+            class="item_logo light first"
+            src="./media/alterra_logo_darkbkg.svg"
+            alt="Alterra"
+          />
+          <img
+            class="item_logo dark first"
+            src="./media/alterra_logo.svg"
+            alt="Alterra"
+          />
+        </div>
+        <article class="work_text">
+          <p class="work_description">
+            Tienda de cremas faciales, velas e indumentaria.
+            <br />
+            Diseño del branding y desarrollo web responsive.
+          </p>
+          <div class="item_links">
+            <a target="_blank" href="https://www.github.com/jucaran/alterra">
+              <img src="./media/github.svg" alt="Github" />
+            </a>
+            <a target="_blank" href="https://www.alterra.com.ar">
+              <img src="./media/web.svg" alt="See page" />
+            </a>
+          </div>
+        </article>
+        <div class="video_preview_container">
+          <img
+            src="./media/alterra_preview_img.png"
+            alt="Alterra Video"
+            class="work_video_preview first"
+          />
+          <span>Video preview</span>
+        </div>
+      </article>
+      <article class="work_item second">
+        <div class="event_handler second"></div>
+        <div class="logo_container second">
+          <img
+            class="item_logo light second"
+            src="./media/dubsnip_logo_darkbkg.svg"
+            alt="dubsNIP"
+          />
+          <img
+            class="item_logo dark second"
+            src="./media/dubsnip_logo.svg"
+            alt="dubsNIP"
+          />
+        </div>
+        <article class="work_text">
+          <p class="work_description">
+            Tienda de articulos musicales.
+            <br />
+            Diseño del branding, desarrollo front-end en React y desarrollo
+            back-end en nodeJS.
+          </p>
+          <div class="item_links">
+            <a
+              target="_blank"
+              href="https://www.github.com/jucaran/dubsnip-store"
+            >
+              <img src="./media/github.svg" alt="Github" />
+            </a>
+            <a target="_blank" href="https://www.dubsnip.vercel.app">
+              <img src="./media/web.svg" alt="See page" />
+            </a>
+          </div>
+        </article>
+        <div class="video_preview_container">
+          <img
+            src="./media/dubsnip_preview_img.png"
+            alt="Dubsnip Video"
+            class="work_video_preview second"
+          />
+          <span>Video preview</span>
+        </div>
+      </article>
+      <article class="work_item third">
+        <div class="event_handler third"></div>
+        <div class="logo_container third">
+          <img
+            class="item_logo light third"
+            src="./media/beatmaker_logo_darkbkg.svg"
+            alt="Beatmaker"
+          />
+          <img
+            class="item_logo dark third"
+            src="./media/beatmaker_logo.svg"
+            alt="Beatmaker"
+          />
+        </div>
+        <article class="work_text">
+          <p class="work_description">
+            Proyecto personal para familiarizarme con el flujo en React.
+            <br />
+            Secuenciador de beats dinámico.
+            <br />
+            Manejo de pulso, tiempos y sonidos.
+          </p>
+          <div class="item_links">
+            <a target="_blank" href="https://www.github.com/jucaran/beatmaker">
+              <img src="./media/github.svg" alt="Github" />
+            </a>
+            <a target="_blank" href="./beatmaker">
+              <img src="./media/web.svg" alt="See page" />
+            </a>
+          </div>
+        </article>
+        <div class="video_preview_container">
+          <img
+            src="./media/beatmaker_preview_img.png"
+            alt="Beatmaker Video"
+            class="work_video_preview third"
+          />
+          <span>Video preview</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Video handler -->
+    <div class="modal_bkg"></div>
+    <div class="video_controller">
+      <span class="icon-play"></span>
+    </div>
+    <video src="./media/alterra_preview.mp4" class="work_video first"></video>
+    <video src="./media/dubsnip_preview.mp4" class="work_video second"></video>
+    <video src="./media/beatmaker_preview.mp4" class="work_video third"></video>
+
+    <!-- Adding js scripts -->
+    <script src="./scripts/loader.js"></script>
+    <script src="./scripts/language.js"></script>
+    <script src="./scripts/sidebar.js"></script>
+    <script src="./scripts/work_videos.js"></script>
+    <script></script>
+  </body>
+</html>
