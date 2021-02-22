@@ -4,6 +4,7 @@ const pageHeight = document.documentElement.scrollHeight;
 
 canvas.width = pageWidth;
 canvas.height = pageHeight;
+canvas.style.zIndex = "-10";
 
 console.log(canvas.width);
 
