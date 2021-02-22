@@ -73,6 +73,16 @@ body {
   animation: blink_close 3s linear infinite normal forwards;
 }
 
+.profile_img .picture:hover #eyes {
+  opacity: 0;
+  animation: none;
+}
+
+.profile_img .picture:hover #eyes_active {
+  animation: none;
+  opacity: 1;
+}
+
 .profile_img .picture:hover #light_bulb {
   opacity: 1;
   transform: translateY(-50px);
