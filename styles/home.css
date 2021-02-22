@@ -1,3 +1,14 @@
+body {
+  overflow: hidden;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
 .right_nav {
   position: fixed;
   top: 1rem;
@@ -39,10 +50,43 @@
 .profile_img .picture {
   width: 15rem;
   height: 15rem;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   margin-top: -1rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background: white;
+  cursor: pointer;
+}
+
+.profile_img .picture #light_bulb {
+  opacity: 0;
+  transition: 0.3s ease-out;
+  position: relative;
+}
+
+.profile_img .picture #eyes_active {
+  opacity: 0;
+  animation: blink 3s linear infinite normal forwards;
+}
+.profile_img .picture #eyes {
+  opacity: 0;
+  animation: blink_close 3s linear infinite normal forwards;
+}
+
+.profile_img .picture:hover #light_bulb {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+.profile_img .picture #smile {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+
+.profile_img .picture:hover #smile {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .profile_img {

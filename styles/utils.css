@@ -130,6 +130,47 @@ p::-moz-selection {
   }
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0;
+  }
+  54% {
+    opacity: 1;
+  }
+  56% {
+    opacity: 1;
+  }
+  57% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink_close {
+  0% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 0;
+  }
+  56% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Icons css */
 @font-face {
   font-family: "icomoon";
