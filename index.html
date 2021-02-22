@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/utils.css" />
+    <!-- <link rel="stylesheet" href="./styles/utils.css" />
     <link rel="stylesheet" href="./styles/loader.css" />
     <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" /> -->
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Juan Castro Arancibia</title>
   </head>
   <body>
@@ -69,20 +70,21 @@
       </ul>
     </nav>
 
-    <!-- Home content -->
+    <!-- Right nav -->
     <nav class="right_nav">
       <span class="language"
-        ><img id="language" src="./media/language.svg" alt="Change language"
+      ><img id="language" src="./media/language.svg" alt="Change language"
       /></span>
       <a id="contact_btn" href="contact.html">
         <span class="btn_text">Escríbeme!</span>
         <span class="icon-message-circle"></span
-      ></a>
-    </nav>
-    <section class="profile">
+          ></a>
+        </nav>
+        
+    <!-- Home content -->
+    <main class="profile">
       <div class="profile_img">
         <div class="column"></div>
-
         <!-- Profile SVG -->
         <svg
           class="picture"
@@ -226,9 +228,9 @@
             </g>
           </g>
         </svg>
-
-        <!-- End Profile SVG -->
       </div>
+
+      <!-- Profile text -->
       <header class="profile_txt">
         <div class="titles">
           <div class="row"></div>
@@ -252,7 +254,7 @@
           ><button class="cta primary">MIRÁ MI TRABAJO</button></a
         >
       </header>
-    </section>
+    </main>
 
     <!-- Adding js scripts -->
     <script src="./scripts/loader.js"></script>
