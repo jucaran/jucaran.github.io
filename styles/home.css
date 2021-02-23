@@ -2,11 +2,14 @@ body {
   overflow: hidden;
 }
 
+.canvas_wrapper {
+  z-index: -10;
+}
+
 #canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -10;
 }
 
 .right_nav {
