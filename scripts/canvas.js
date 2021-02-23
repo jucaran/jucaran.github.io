@@ -14,16 +14,20 @@ const circle1 = {
   x: canvas.height / 10 + 20,
   y: 200,
   size: canvas.height / 10,
-  dx: 5,
-  dy: 4,
+  dx: canvas.width / 250,
+  dy: canvas.width / 300,
+  // dx: 5,
+  // dy: 4,
 };
 
 const circle2 = {
   x: canvas.width - canvas.height / 15,
   y: canvas.height / 15 + 50,
   size: canvas.height / 15,
-  dx: -5,
-  dy: -4,
+  dx: (canvas.width / 250) * -1,
+  dy: (canvas.width / 300) * -1,
+  // dx: -5,
+  // dy: -4,
 };
 
 function drawCircles() {
