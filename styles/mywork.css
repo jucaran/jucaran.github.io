@@ -80,6 +80,9 @@
   opacity: 1;
   transition: 500ms;
 }
+.dark .item_logo.light {
+  opacity: 1;
+}
 
 .work_item .work_text {
   width: 30vw;

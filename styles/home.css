@@ -1,3 +1,6 @@
+body {
+  transition: 0.3s;
+}
 .dark {
   background: var(--light-black);
 }
@@ -135,6 +138,9 @@
 .profile_txt h3,
 p {
   margin-bottom: 2rem;
+}
+.profile_txt p {
+  line-height: 2rem;
 }
 
 .profile_txt .titles .row {

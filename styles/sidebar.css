@@ -96,10 +96,9 @@
   position: relative;
   top: 0.2rem;
   height: 1.5rem;
-  margin-right: 1rem;
   cursor: pointer;
 }
-#contact_btn {
+.right_item {
   font-size: 1.5rem;
   color: var(--primary-color);
   cursor: pointer;
@@ -107,12 +106,22 @@
   z-index: 8;
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 }
-#contact_btn .btn_text {
+.light_icon {
+  display: none;
+}
+.dark .light_icon {
+  display: block;
+}
+.dark .dark_icon {
+  display: none;
+}
+.right_item .btn_text {
   font-family: "Space mono", monospace;
   font-size: 0.8rem;
 }
-#contact_btn:hover {
+.right_item:hover {
   color: var(--secondary-color);
 }
 
@@ -121,13 +130,18 @@
     margin-bottom: 10vh;
   }
 
+  .right_nav {
+    right: 0.7rem;
+  }
   #language {
     height: 1.7rem;
+    margin-right: 0.3rem;
   }
-  #contact_btn {
+  .right_item {
     font-size: 2rem;
+    margin-left: 0.2rem;
   }
-  #contact_btn .btn_text {
+  .right_item .btn_text {
     display: none;
   }
 }
