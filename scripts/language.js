@@ -4,7 +4,7 @@ const texts = {
     contactBtn: "Escríbeme!",
     about:
       "Desde que era muy chico siempre me gusto jugar creando cosas. Empecé a usar Photoshop cuando tenía 13 y cree mi primer web con HTML y CSS cuando tenia 15. Después empecé a aprender Javascript y hoy tengo experiencia con React, Redux, NodeJS y PostgreSQL, entre otras tecnologías. También me encanta hacer música, sacar fotos y dibujar.",
-    cta: ["DESCARGAR CV", "MIRÁ MI TRABAJO"],
+    cta: ["CURRICULUM VITAE", "MIRÁ MI TRABAJO"],
     works: [
       "Tienda de cremas faciales, velas e indumentaria. Diseño del branding y desarrollo web responsive.",
       "Tienda de articulos musicales. Diseño del branding, desarrollo front-end en React y desarrollo back-end en nodeJS.",
@@ -21,7 +21,7 @@ const texts = {
     contactBtn: "Get in touch!",
     about:
       "Since i was a little kid I always liked to play around creating things. I began to use Photoshop when I was 13 years old and made my first website with HTML and CSS when I was 15 years old. Then I started learning Javascript and now I have experience with React, Redux, NodeJS, PostgreSQL and other technologies. I also love making music, shooting photos and drawing.",
-    cta: ["DOWNLOAD RESUME", "CHECK MY WORK"],
+    cta: ["CHECK MY RESUME", "CHECK MY WORK"],
     works: [
       "Cosmetics, creams, candles and clothing store. I've worked in the branding design and in the responsive web development.",
       "Music instruments and merch web store. I've worked in the branding design, front-end development with React and back-end development with NodeJS.",
