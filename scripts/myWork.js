@@ -4,11 +4,13 @@ const workItemsHandlers = document.querySelectorAll(".event_handler");
 const grid = document.querySelector(".my_work");
 
 const changeLogoColors = (position, isMouseIn) => {
-  const [logoLight, logoDark] = document.querySelectorAll(
-    `.item_logo.${position}`
-  );
-  logoLight.style.opacity = isMouseIn ? 0 : 1;
-  logoDark.style.opacity = isMouseIn ? 1 : 0;
+  if (!darkMode) {
+    const [logoLight, logoDark] = document.querySelectorAll(
+      `.item_logo.${position}`
+    );
+    logoLight.style.opacity = isMouseIn ? 0 : 1;
+    logoDark.style.opacity = isMouseIn ? 1 : 0;
+  }
 };
 
 const changeGrid = (e, isMobile) => {

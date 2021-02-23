@@ -1,5 +1,9 @@
-body {
-  overflow: hidden;
+.dark {
+  background: var(--light-black);
+}
+
+.dark p {
+  color: #e8e8e8;
 }
 
 .canvas_wrapper {

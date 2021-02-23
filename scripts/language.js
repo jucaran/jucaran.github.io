@@ -1,6 +1,12 @@
 const texts = {
   es: {
-    navbar: ["Inicio", "Descargar CV", "Mi trabajo", "Contactame!"],
+    navbar: [
+      "Inicio",
+      "Descargar CV",
+      "Mi trabajo",
+      "Contactame!",
+      "Modo oscuro",
+    ],
     contactBtn: "Escríbeme!",
     about:
       "Desde que era muy chico siempre me gusto jugar creando cosas. Empecé a usar Photoshop cuando tenía 13 y cree mi primer web con HTML y CSS cuando tenia 15. Después empecé a aprender Javascript y hoy tengo experiencia con React, Redux, NodeJS y PostgreSQL, entre otras tecnologías. También me encanta hacer música, sacar fotos y dibujar.",
@@ -17,7 +23,7 @@ const texts = {
     contactSending: "Tu mensaje está siendo enviado!",
   },
   en: {
-    navbar: ["Home", "My resume", "My work", "Contact me!"],
+    navbar: ["Home", "My resume", "My work", "Contact me!", "Dark mode"],
     contactBtn: "Get in touch!",
     about:
       "Since i was a little kid I always liked to play around creating things. I began to use Photoshop when I was 13 years old and made my first website with HTML and CSS when I was 15 years old. Then I started learning Javascript and now I have experience with React, Redux, NodeJS, PostgreSQL and other technologies. I also love making music, shooting photos and drawing.",

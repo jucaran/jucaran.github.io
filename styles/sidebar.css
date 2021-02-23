@@ -56,11 +56,10 @@
 }
 
 .sidebar .menu_items .menu_item {
-  margin-bottom: 12vh;
+  margin-bottom: 11vh;
 }
 
 .sidebar .menu_items .menu_item a {
-  /* background: pink; */
   display: block;
   width: 100%;
   white-space: nowrap;
@@ -71,7 +70,6 @@
 }
 
 .sidebar .menu_items .menu_item a:hover {
-  /* background: pink; */
   background: var(--primary-color);
 }
 
@@ -119,6 +117,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .sidebar .menu_items .menu_item {
+    margin-bottom: 10vh;
+  }
+
   #language {
     height: 1.7rem;
   }
