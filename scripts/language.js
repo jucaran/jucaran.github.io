@@ -37,6 +37,7 @@ const texts = {
 
 const page = window.location.pathname.split("/").pop();
 const lang = window.navigator.language || window.navigator.browserLanguage;
+const switcher = document.querySelector("#language");
 let spanish = localStorage.getItem("spanish");
 if (!spanish) {
   localStorage.setItem("spanish", lang.includes("es"));
@@ -53,12 +54,6 @@ const getTexts = (spanish) => {
       cta[0].innerText = texts[spanish ? "es" : "en"].cta[0];
       cta[1].innerText = texts[spanish ? "es" : "en"].cta[1];
       contactBtn.innerText = texts[spanish ? "es" : "en"].contactBtn;
-      const switcher = document.querySelector("#language");
-      switcher.addEventListener("click", () => {
-        localStorage.setItem("spanish", !spanish);
-        spanish = !spanish;
-        getTexts(spanish);
-      });
       break;
 
     case "mywork.html":
@@ -92,8 +87,6 @@ const getTexts = (spanish) => {
   const nav = document.querySelectorAll(".item_txt");
   const resumeLinks = document.querySelectorAll(".resume_link");
 
-  console.log(resumeLinks);
-
   resumeLinks.forEach(
     (el) =>
       (el.href = `Juan_Castro_Arancibia_CV${spanish ? "es.pdf" : "en.pdf"}`)
@@ -103,5 +96,11 @@ const getTexts = (spanish) => {
     el.innerText = texts[spanish ? "es" : "en"].navbar[i];
   });
 };
+
+switcher.addEventListener("click", () => {
+  localStorage.setItem("spanish", !spanish);
+  spanish = !spanish;
+  getTexts(spanish);
+});
 
 getTexts(spanish);
