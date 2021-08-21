@@ -22,13 +22,13 @@ if (darkMode === null) {
 }
 
 darkMode = JSON.parse(darkMode);
+const layout = [document.querySelector("body"), document.querySelector(".background")]
 
 if (darkMode) {
-  document.querySelector("body").classList.add("dark");
+  layout.forEach(x => x ? x.classList.add("dark") : null);
 }
 
 const toggleMode = () => {
-  const layout = [document.querySelector("body"), document.querySelector(".background")]
   if (!darkMode) {
     layout.forEach(x => x ? x.classList.add("dark") : null);
   } else {
