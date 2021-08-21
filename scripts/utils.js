@@ -28,10 +28,11 @@ if (darkMode) {
 }
 
 const toggleMode = () => {
+  const layout = [document.querySelector("body"), document.querySelector(".background")]
   if (!darkMode) {
-    document.querySelector("body").classList.add("dark");
+    layout.forEach(x => x ? x.classList.add("dark") : null);
   } else {
-    document.querySelector("body").classList.remove("dark");
+    layout.forEach(x => x ? x.classList.remove("dark") : null);
   }
 
   if (window.location.pathname.split("/").pop() === "mywork.html") {
