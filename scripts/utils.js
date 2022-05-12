@@ -22,30 +22,26 @@ if (darkMode === null) {
 }
 
 darkMode = JSON.parse(darkMode);
-const layout = [document.querySelector("body"), document.querySelector(".background")]
+const layout = [document.querySelector("body"), document.querySelector(".background")];
 
 if (darkMode) {
-  layout.forEach(x => x ? x.classList.add("dark") : null);
+  layout.forEach(x => (x ? x.classList.add("dark") : null));
 }
 
 const toggleMode = () => {
   if (!darkMode) {
-    layout.forEach(x => x ? x.classList.add("dark") : null);
+    layout.forEach(x => (x ? x.classList.add("dark") : null));
   } else {
-    layout.forEach(x => x ? x.classList.remove("dark") : null);
+    layout.forEach(x => (x ? x.classList.remove("dark") : null));
   }
 
   if (window.location.pathname.split("/").pop() === "mywork.html") {
     const gridItems = document.querySelectorAll(".work_item");
-    const [activeItem] = [...gridItems].filter((el) =>
-      el.classList.contains("active")
-    );
+    const [activeItem] = [...gridItems].filter(el => el.classList.contains("active"));
     const [, activePosition] = activeItem && activeItem.classList;
 
     if (activePosition) {
-      const [workLogoLight, workLogoDark] = document.querySelectorAll(
-        `.item_logo.${activePosition}`
-      );
+      const [workLogoLight, workLogoDark] = document.querySelectorAll(`.item_logo.${activePosition}`);
       workLogoLight.style.opacity = darkMode ? 0 : 1;
       workLogoDark.style.opacity = darkMode ? 1 : 0;
     }

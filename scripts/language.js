@@ -1,15 +1,9 @@
 const texts = {
   es: {
-    navbar: [
-      "Inicio",
-      "Descargar CV",
-      "Mi trabajo",
-      "Contactame!",
-      "Modo oscuro",
-    ],
+    navbar: ["Inicio", "Descargar CV", "Mi trabajo", "Contactame!", "Modo oscuro"],
     contactBtn: "Escríbeme!",
     about:
-      "Desde que era muy chico siempre me gusto jugar creando cosas. Empecé a usar Photoshop cuando tenía 13 y cree mi primer web con HTML y CSS cuando tenia 15. Después empecé a aprender Javascript y hoy tengo experiencia con React, Redux, NodeJS y PostgreSQL, entre otras tecnologías. También me encanta hacer música, sacar fotos y dibujar.",
+      "Desde que era muy chico siempre me gusto jugar creando cosas. Empecé a usar Photoshop cuando tenía 13 y cree mi primer web con HTML y CSS cuando tenia 15. Después empecé a aprender Javascript y hoy tengo experiencia con ReactJS, NodeJS, Flutter, Python, Firebase y Kubernetes, entre otras tecnologías. También me encanta hacer música, sacar fotos y dibujar.",
     cta: ["CURRICULUM VITAE", "MIRÁ MI TRABAJO"],
     works: [
       "Tienda de cremas faciales, velas e indumentaria. Diseño del branding y desarrollo web responsive.",
@@ -26,7 +20,7 @@ const texts = {
     navbar: ["Home", "My resume", "My work", "Contact me!", "Dark mode"],
     contactBtn: "Get in touch!",
     about:
-      "Since i was a little kid I always liked to play around creating things. I began to use Photoshop when I was 13 years old and made my first website with HTML and CSS when I was 15 years old. Then I started learning Javascript and now I have experience with React, Redux, NodeJS, PostgreSQL and other technologies. I also love making music, shooting photos and drawing.",
+      "Since i was a little kid I always liked to play around creating things. I began to use Photoshop when I was 13 years old and made my first website with HTML and CSS when I was 15 years old. Then I started learning Javascript and now I have experience with ReactJS, NodeJS, Flutter, Python, Firebase y Kubernetes and other technologies. I also love making music, shooting photos and drawing.",
     cta: ["CHECK MY RESUME", "CHECK MY WORK"],
     works: [
       "Cosmetics, creams, candles and clothing store. I've worked in the branding design and in the responsive web development.",
@@ -50,7 +44,7 @@ if (!spanish) {
 }
 spanish = JSON.parse(spanish);
 
-const getTexts = (spanish) => {
+const getTexts = spanish => {
   switch (page) {
     default:
       const about = document.querySelector("p");
@@ -64,9 +58,7 @@ const getTexts = (spanish) => {
 
     case "mywork.html":
       const works = document.querySelectorAll(".work_description");
-      works.forEach(
-        (item, i) => (item.innerText = texts[spanish ? "es" : "en"].works[i])
-      );
+      works.forEach((item, i) => (item.innerText = texts[spanish ? "es" : "en"].works[i]));
       break;
 
     case "contact.html":
@@ -76,15 +68,8 @@ const getTexts = (spanish) => {
       const submitBtn = document.querySelector(".submit_btn");
       const sending = document.querySelector("#form_sending");
       title.innerText = texts[spanish ? "es" : "en"].contactTitle;
-      labels.forEach(
-        (item, i) =>
-          (item.innerText = texts[spanish ? "es" : "en"].contactLabels[i])
-      );
-      inputs.forEach(
-        (item, i) =>
-          (item.placeholder =
-            texts[spanish ? "es" : "en"].contactPlaceholders[i])
-      );
+      labels.forEach((item, i) => (item.innerText = texts[spanish ? "es" : "en"].contactLabels[i]));
+      inputs.forEach((item, i) => (item.placeholder = texts[spanish ? "es" : "en"].contactPlaceholders[i]));
       submitBtn.innerText = texts[spanish ? "es" : "en"].contactSubmit;
       sending.innerText = texts[spanish ? "es" : "en"].contactSending;
       break;
@@ -93,10 +78,7 @@ const getTexts = (spanish) => {
   const nav = document.querySelectorAll(".item_txt");
   const resumeLinks = document.querySelectorAll(".resume_link");
 
-  resumeLinks.forEach(
-    (el) =>
-      (el.href = `Juan_Castro_Arancibia_CV${spanish ? "es.pdf" : "en.pdf"}`)
-  );
+  resumeLinks.forEach(el => (el.href = `Juan_Castro_Arancibia_CV${spanish ? "es.pdf" : "en.pdf"}`));
 
   nav.forEach((el, i) => {
     el.innerText = texts[spanish ? "es" : "en"].navbar[i];
